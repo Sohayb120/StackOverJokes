@@ -1,0 +1,138 @@
+body{
+    background-color: #00c8cf;
+    background-image: url("https://www.transparenttextures.com/patterns/dark-geometric.png");
+    margin: 0 10rem ;
+    font-family: "Kite One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: #e4ebf6;
+   
+}
+
+nav > .items > ul{
+display: flex;
+justify-content: space-evenly;
+}
+nav > .items > ul > li{
+    list-style: none;
+    padding: 10px;
+    font-size: larger;
+}
+nav > .items > ul > li > a{
+  text-decoration: none;
+  color: #e4ebf6;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+nav > .items > ul > li :hover{
+ background-color: #e8ee3f;
+ color: #00a6cf;
+}
+
+
+.title{
+    color: #e8ee3f;
+}
+
+.joke{
+    color: rgba(43, 95, 226, 0.756);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+border: 2px white solid;
+border-radius: 20%;
+padding: 2rem;
+margin: 5rem 0 0 0;
+}
+.joke h2{
+    
+        color: #f6f0e4;
+         width: auto;
+   
+}
+
+.btn{
+    padding: 0.4rem;
+    font-size: larger;
+    background-color: #e8ee3f;
+    color: #00a6cf;
+    text-align: center;
+    border: 2px white solid;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  margin-top: 4rem;
+}
+.dark{
+    display: flex;
+    justify-content: end;
+ 
+}
+.container{
+    height: 100%;
+}
+.container > .title{
+    text-align: center;
+    font-size: x-large;
+}
+
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+      }
+
+      .dark > .btn:hover {
+        background-color: #0f1a16;
+        color: white;
+      }
+      .pun > .btn:hover {
+        background-color: #1053a1;
+        color: white;
+      }
+
+     
+   
+      @media only screen and (max-width: 820px) {
+        body {
+            margin: 1rem;
+        }
+        nav > .items > ul{
+            display: none;
+        }
+        .items{
+            display: flex;
+            align-items: center;
+        }
+       
+      }
+
+      @media only screen and (min-width: 820px) {
+       
+        .menu-icon{
+display: none;
+        }
+        nav > .items > ul > li{
+            padding-right: 2px;
+        }
+        
+       
+      }
+
+
+
+
+

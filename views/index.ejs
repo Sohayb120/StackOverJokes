@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kite+One&family=Lugrasimo&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Jokes</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-title">
+            <h2>stackover<span style="color:#e8ee3f">Jokes</span></h2>
+        </div>
+        <div class="items">
+           <div class="menu-icon">
+            <i class="fa-solid fa-lg fa-bars"></i>
+           </div>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Contact us</a></li>
+    <li><a href="#">About us</a></li>
+</ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="title">
+    <h1> Jokes That Compile.Happiness()  </h1>
+</div>
+    <div class="joke">
+      
+        <% if(locals.jok){%>
+ <h2> <%= jok %> </h2>
+       <% } %>
+       
+    </div>
+
+   
+
+    <div class="btns">
+        <form action="/dark" method="post">
+            <div class="dark">
+    <button class="btn" type="submit">Dark Joke </button>
+        </div>
+        </form>
+     
+        <form action="/pun" method="post">
+            <div class="pun">
+        <button class="btn" type="submit">Pun Joke </button>
+        </div>
+        </form>
+    </div>
+    
+   
+    <footer>  
+         <% const date = new Date().getFullYear();%>
+         Copyright &#169; <span style="color: #e8ee3f;"><%= date %> </span> 
+     </footer>
+</div>
+</body>
+</html>
